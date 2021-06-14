@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Car Registration"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "CarRegistration_buttonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 1 8 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "customerButton"
+				"text": "Customer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "customerButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 3 8 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "carRental_button"
+				"text": "Car Rental"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "carRental_buttonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 5 8 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "carDeployment_button"
+				"text": "Car Deployment"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "carDeployment_buttonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 7 8 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "carReturn_button"
+				"text": "Car Return"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "carReturn_buttonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 9 8 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logoutButton"
+				"text": "Logout"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 11 8 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 415 )
+		} )
+	}
+}

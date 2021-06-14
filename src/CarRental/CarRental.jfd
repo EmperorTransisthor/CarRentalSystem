@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][123,fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][36][][][][][][][][][][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Car ID"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 3"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "carID_comboBox"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "carID_comboBoxActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 3 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Customer ID"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "customerID_JTextField"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "customerID_JTextFieldKeyPressed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 6 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Rent Date"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 9"
+			} )
+			add( new FormComponent( "com.toedter.calendar.JDateChooser" ) {
+				name: "date_JDateChooser"
+				addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "date_JDateChooserPropertyChange", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 9 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Return Date"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 12"
+			} )
+			add( new FormComponent( "com.toedter.calendar.JDateChooser" ) {
+				name: "returnDate_JDateChooser"
+				addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "returnDate_JDateChooserPropertyChange", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 12 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Rental Fee"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 15"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Fee_textField"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 15 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "rentButton"
+				"text": "Rent"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 10, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rentButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 18 8 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancelButton"
+				"text": "Cancel"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 10, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 13 18 3 3"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 880, 715 )
+		} )
+	}
+}
